@@ -19,12 +19,20 @@ const CTASection = () => {
             building the future of payments.
         </p>
 
-        <button 
-            style={{ background: "linear-gradient(270deg, #1C50D3 0%, #107375 100%)"}}
-            className="cursor-pointer text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-medium transition-colors"
-        >
-          Get Early Access
-        </button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 mb-2 mx-auto">
+            <input
+                type="email"
+                placeholder="your@email.com"
+                className="flex-1 w-full px-4 py-3 bg-white rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
+            />
+        
+            <button 
+                style={{ background: "linear-gradient(270deg, #1C50D3 0%, #107375 100%)"}}
+                className="cursor-pointer text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-medium transition-colors"
+            >
+            Get Early Access
+            </button>
+        </div>
       </div>
     </section>
   );

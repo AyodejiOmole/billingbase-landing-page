@@ -84,7 +84,7 @@ const CoreFeaturesSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Core Features</h2>
           <p className="text-gray-600">
-            Everything you need to run subscription and billing workflows in crypto
+            Everything you need to run subscriptions and billing in crypto
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

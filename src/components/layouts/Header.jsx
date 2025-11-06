@@ -5,11 +5,12 @@ import { Menu, X } from "lucide-react";
 
 import logo from "../../assets/logo.png"
 
-const Header = () => {
+const Header = ({ isVisible }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="border-b border-gray-200 bg-white sticky top-0 z-50">
+    <header className={`bg-white/70 sticky backdrop-blur-md top-0 z-50 shadow ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 hidden -translate-y-10 pointer-events-none'} `}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
@@ -37,14 +38,11 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200 bg-white">
           <nav className="px-4 py-4 space-y-3">
-            <a href="#" className="block text-gray-600 py-2">Product</a>
-            <a href="#" className="block text-gray-600 py-2">Use Cases</a>
-            <a href="#" className="block text-gray-600 py-2">Developers</a>
-            <a href="#" className="block text-gray-600 py-2">Company</a>
-            <a href="#" className="block text-gray-600 py-2">Pricing</a>
-            <a href="#" className="block text-gray-600 py-2">Login</a>
-            <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg mt-2">
-              Request Demo
+            <button 
+              className="text-white px-6 py-3 cursor-pointer rounded-lg hover:bg-blue-700 transition-colors"
+              style={{ background: "linear-gradient(270deg, #1C50D3 0%, #107375 100%)"}}
+            >
+              Join the Waitlist
             </button>
           </nav>
         </div>

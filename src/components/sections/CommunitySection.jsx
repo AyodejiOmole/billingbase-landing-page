@@ -1,4 +1,5 @@
 import community from "../../assets/community.png";
+import iconCheck from "../../assets/icons/icon-check.png";
 
 const CommunitySection = () => {
   return (
@@ -15,14 +16,25 @@ const CommunitySection = () => {
         <img src={community} alt={"community image"} className="w-2/3 h-[180px] object-contain mx-auto" />
 
         <div className="grid md:grid-cols-3 gap-8 text-center max-w-3xl mx-auto mb-8">
-          <div>
-            <div className="text-teal-600 font-medium">Zero custody headaches </div>
+          <div className="border border-teal-400 bg-teal-50 py-4 px-2 rounded-sm">
+            <div className="text-teal-600 font-medium flex justify-center items-center gap-3">
+              <img src={iconCheck} alt="check image" className="w-4 h-4"/>
+              Zero custody headaches 
+            </div>
           </div>
-          <div>
-            <div className="text-teal-600 font-medium">No chargeback risk</div>
+
+          <div className="border border-teal-400 bg-teal-50 py-4 px-2 rounded-sm">
+            <div className="text-teal-600 font-medium flex justify-center items-center gap-3">
+              <img src={iconCheck} alt="check image" className="w-4 h-4"/>
+              No chargeback risk
+            </div>
           </div>
-          <div>
-            <div className="text-teal-600 font-medium">Global from day one</div>
+
+          <div className="border border-teal-400 bg-teal-50 py-4 px-2 rounded-sm">
+            <div className="text-teal-600 font-medium flex justify-center items-center gap-3">
+              <img src={iconCheck} alt="check image" className="w-4 h-4"/>
+              Global from day one
+            </div>
           </div>
         </div>
         <div className="text-center">

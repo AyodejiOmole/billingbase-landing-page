@@ -15,7 +15,7 @@ const FAQItem = ({ question, isOpen, onClick }) => {
       {isOpen && (
         <div className="px-6 pb-6">
           <p className="text-gray-600">
-            Detailed answer would go here explaining the question in depth with comprehensive information about our service.
+            Detailed answer would go here explaining the question.
           </p>
         </div>
       )}
